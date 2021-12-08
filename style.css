@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+:root {
+  --violet-200: rgb(195, 71, 229);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+h1 {
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.text-violet-200 {
+  color: var(--violet-200);
+}
+.box {
+  width: 80vw;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  
+}
+.col {
+text-align: center;
+padding: 2rem;
+border: 1px solid black;
+}
+
+.flex {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width:960px) {
+  .box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+  .flex {
+    display: grid;
+  }
+}
+
+
+
